@@ -24,7 +24,24 @@ const isEven=(number)=>{
     }
 
 }
-
 let num2 =23;
 
 console.log(isEven(num2))
+
+//what will be the output for the below code
+
+const object={
+    message:"hello world",
+    logMessage(){
+        console.log(this.message)
+    }
+   
+}
+
+setTimeout(()=>{
+     console.log(object.logMessage)
+    
+},1000)
+
+//ans: it will return the logMessage function
+//[function :logMessage]
