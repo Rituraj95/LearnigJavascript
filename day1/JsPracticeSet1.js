@@ -43,5 +43,4 @@ setTimeout(()=>{
     
 },1000)
 
-//ans: it will return the logMessage function
-//[function :logMessage]
+//ans: it will return undefined
