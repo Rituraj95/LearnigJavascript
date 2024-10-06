@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="joke"></p>
+    <button id="buttn">Next joke</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+         function getJoke(){
+            axios.get('https://official-joke-api.appspot.com/random_joke')
+            .then(response => {
+              const jokeText = `${response.data.setup} - ${response.data.punchline}`;
+              document.getElementById('joke').textContent = jokeText;  // Display the joke in the <p> tag
+            })
+            .catch(error => {
+              document.getElementById('joke').textContent = 'Error loading joke!';
+              console.error('Error fetching data:', error);  // Error handling
+            });
+         }
+
+         document.getElementById('buttn').addEventListener('click',getJoke)
+
+
+      
+    </script>
+</body>
+</html>
