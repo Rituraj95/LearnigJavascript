@@ -7,17 +7,17 @@
 </head>
 <body>
     <script>
-        //Palidrome or not
-      let word ="madam";
-      let wor=word.split("").reverse().join('')
-      if(word==wor){
-        console.log("palindrome")
-        
-      }else{
-        console.log("not palindrome")
+        //Print the longest word in sentence
+      let sentence="I love my india";
+      let sent=sentence.split(" ");
+      let longestWord="";
+ 
+      for(i=0;i<sent.length;i++){
+        if(sent[i].length>longestWord.length){
+            longestWord=sent[i];
+        }
       }
-    
-      
+     console.log(longestWord);
     </script>
     
 </body>

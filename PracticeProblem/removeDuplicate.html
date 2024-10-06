@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //program to remove duplicate from array
+
+        function removeDuplicates(arr) {
+            return [...new Set(arr)]; // Step 1: Create a Set and convert it back to an array
+        }
+        
+        // Example usage:
+        const numbers = [1, 2, 2, 3, 4, 4, 5];
+        const uniqueNumbers = removeDuplicates(numbers);
+        console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
+        
+
+
+
+    </script>
+    
+</body>
+</html>
