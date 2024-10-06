@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const string = "Rituraj";
+
+        // Step 1: Split the string into an array of characters
+        const str = string.split('');
+        
+        // Step 2: Initialize an empty string to hold the reversed string
+        let reversedString = '';
+        
+        // Step 3: Loop through the array in reverse order
+        for (let i = str.length - 1; i >= 0; i--) {
+            reversedString += str[i]; // Append each character to the reversedString
+        }
+        
+        // Output the reversed string
+        console.log(reversedString); // Output: "jaturiR"
+        
+      
+    </script>
+</body>
+</html>
