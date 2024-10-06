@@ -7,16 +7,16 @@
 </head>
 <body>
     <script>
-      let sentence="I love my india";
-      let sent=sentence.split(" ");
-      let longestWord="";
-
-     for(i=0;i<sent.length;i++){
-        if(sent[i].length>longestWord.length){
-            longestWord=sent[i];
-        }
-     }
-     console.log(longestWord);
+      let word ="madam";
+      let wor=word.split("").reverse().join('')
+      if(word==wor){
+        console.log("palindrome")
+        
+      }else{
+        console.log("not palindrome")
+      }
+    
+      
     </script>
     
 </body>
