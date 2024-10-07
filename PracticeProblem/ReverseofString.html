@@ -9,24 +9,15 @@
     
     <script>
 
-        //given two array that are sorted
-           // [0,3,4,31] and [4,6,30]
-           //merge them and sort
-           //output=[0,3,4,4,6,30,31]
+        //reverse Strign
 
-           
-           const array=[0,3,4,31];
-           const array2=[4,6,30];
-          
-           const mergedArray=[...array,...array2];
-           mergedArray.sort((a,b)=>a-b);
-           console.log(mergedArray)
-           
-
-
-
-
-        
+        const string = "Rituraj";
+        const str = string.split('');
+        let reversedString = '';
+        for (let i = str.length - 1; i >= 0; i--) {
+            reversedString += str[i]; 
+        console.log(reversedString);
+        }
       
     </script>
 </body>
