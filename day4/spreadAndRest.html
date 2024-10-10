@@ -9,11 +9,16 @@
 
     <script>
 
+        
+       //Spread Operator
         const number=[1,2,3,4];
         const number2=[...number,5,6,7];
         console.log(number2);
         //output: [1,2,3,4,5,6,7]
+        //output:"Rituraj Deka";
 
+
+      //Rest Operator
         const {name,...rest}={
             name:"Rituraj",
             city:"Tezpur",
@@ -21,7 +26,9 @@
             State:"assam"
         }
         console.log(name);
+        //output: Rituraj
         console.log(rest);
+        //output:{city:"Tezpur",  Country:'India',State:"assam"}
 
 
     </script>
