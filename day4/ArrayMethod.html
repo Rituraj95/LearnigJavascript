@@ -9,8 +9,40 @@
     
     <script>
 
+        //toString() it is use for converting an array into string
         const array=[1,2,3,4,5,6,7,8,9];
-        array.toString();
+        console.log(array.toString()) // it convert it to string with separated commaa
+
+        //join() it is use for concatenating all element of an array 
+        const array1=["Rituraj","Rohit","Achyut"];
+        console.log(array1.join(","));
+
+        console.log(array1.pop()); //remove last elemeny and return
+        
+        console.log(array1.push("anubhob")); //add new element to the last and return length of the array
+        console.log(array1); //
+
+        console.log(array1.shift()); //remove the first element
+        console.log(array1.unshift("Ritu")); //add new element at begining and return length
+        console.log(array1)
+
+        let array3=["apple","banana","grapes"];
+        delete array3[2];
+        console.log(array3);//delete an element from an array;
+
+        const array4=[1,2,3,4,5];
+        const array5=[6,7,8,9];
+        const array6=[];
+        const array7= array6.concat(array4,array5);
+        console.log(array7);
+
+        const array8=["apple",'year','van','zebra'];
+        console.log(array8.sort()); //it sort the elements
+
+        //slice and splice
+        const array10=[1,2,3,4,5];
+        console.log(array10.reverse());
+        console.log(array10.isArray());
 
 
 
